@@ -17,7 +17,7 @@ const modalExplanation = document.getElementById("modalExplanation");
 const closeModal = document.getElementById("closeModal");
 
 // NASA API Key
-const apiKey = "DEMO_KEY";
+const apiKey = "BjafFcImvttsEweN56RSYeyL4FxDA6m81ggbHauG";
 
 // Random Space Facts
 const spaceFacts = [
