@@ -3,20 +3,20 @@
 ========================= */
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #f1f1f1;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #222;
+  font-family: Arial, sans-serif;
   padding: 20px;
+  color: #222;
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -33,36 +33,30 @@ body {
 }
 
 .logo {
-  width: 150px;
+  width: 180px;
   height: auto;
 }
 
 .site-header h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #212121;
+  font-size: 2.5rem;
 }
 
 /* =========================
-   Space Fact Box
+   Space Fact
 ========================= */
 
 .space-fact {
   background: white;
   border-left: 6px solid #FC3D21;
-  border-radius: 8px;
   padding: 15px;
+  border-radius: 8px;
   margin-bottom: 25px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .space-fact h3 {
   color: #0B3D91;
   margin-bottom: 8px;
-}
-
-.space-fact p {
-  line-height: 1.5;
 }
 
 /* =========================
@@ -72,28 +66,24 @@ body {
 .filters {
   display: flex;
   justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
+  gap: 10px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 input[type="date"] {
   padding: 12px;
-  font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 6px;
-  background-color: white;
 }
 
 button {
-  padding: 12px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 6px;
   background-color: #0B3D91;
   color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -107,18 +97,18 @@ button:hover {
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-  gap: 25px;
 }
 
 .gallery-item {
-  width: 380px;
+  width: 350px;
   background: white;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-  transition: transform 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .gallery-item:hover {
@@ -127,20 +117,17 @@ button:hover {
 
 .gallery-item img {
   width: 100%;
-  height: 260px;
+  height: 220px;
   object-fit: cover;
 }
 
 .gallery-item h3 {
-  color: #142850;
-  padding: 15px 15px 8px;
-  font-size: 1.5rem;
+  padding: 10px;
+  color: #0B3D91;
 }
 
 .gallery-item p {
-  padding: 0 15px 15px;
-  color: #444;
-  font-size: 1rem;
+  padding: 0 10px 10px;
 }
 
 /* =========================
@@ -150,12 +137,12 @@ button:hover {
 .placeholder {
   text-align: center;
   width: 100%;
-  padding: 60px;
+  padding: 50px;
   color: #666;
 }
 
 .placeholder-icon {
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 15px;
 }
 
@@ -167,7 +154,7 @@ button:hover {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0,0,0,0.85);
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -180,69 +167,32 @@ button:hover {
   max-height: 90vh;
   overflow-y: auto;
   border-radius: 10px;
-  padding: 25px;
+  padding: 20px;
   position: relative;
 }
 
 .modal-content img {
   width: 100%;
-  margin-bottom: 20px;
   border-radius: 8px;
-}
-
-.modal-content h2 {
-  color: #0B3D91;
-  margin-bottom: 10px;
-}
-
-.modal-content p {
-  line-height: 1.6;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 #closeModal {
   position: absolute;
+  top: 10px;
   right: 20px;
-  top: 15px;
-  font-size: 2rem;
+  font-size: 32px;
   cursor: pointer;
-  color: #444;
-}
-
-#closeModal:hover {
-  color: #FC3D21;
 }
 
 /* =========================
-   Video Cards
-========================= */
-
-.video-card {
-  padding: 20px;
-}
-
-.video-card a {
-  color: #0B3D91;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.video-card a:hover {
-  text-decoration: underline;
-}
-
-/* =========================
-   Responsive Design
+   Responsive
 ========================= */
 
 @media (max-width: 768px) {
 
   .site-header {
     flex-direction: column;
-  }
-
-  .site-header h1 {
-    font-size: 2rem;
   }
 
   .gallery-item {
